@@ -1,5 +1,5 @@
 {       
-    //Challenge #7. Passing rate: 65%
+    //Challenge #8. Passing rate: 65%
 
     //same as the solution of challenge #4
     init: function(elevators, floors) {
