@@ -1,7 +1,7 @@
 {       
     //Hit the 4 hour mark
 	
-	//Challenge #4. Passing rate: 75%, failure cases mostly need to transport one or two more person to pass
+    //Challenge #4. Passing rate: 75%, failure cases mostly need to transport one or two more person to pass
 	 
     //same idea as the solution of challenge #3, but enable multiple elevators to run at the same time
     init: function(elevators, floors) {
