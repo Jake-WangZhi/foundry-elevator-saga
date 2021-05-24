@@ -1,5 +1,5 @@
 {
-    //Passing Rate: 100% 
+    // Challenge #1, Passing Rate: 100% 
 	init: function(elevators, floors) {
         var elevator = elevators[0]; // Let's use the first elevator
 
