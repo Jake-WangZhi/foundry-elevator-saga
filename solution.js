@@ -1,6 +1,6 @@
 {       
-    //Challenge #8. Passing rate: 65%
-
+    //Challenge #9. Passing rate: 15%
+	
     //same as the solution of challenge #4
     init: function(elevators, floors) {
         let ups = []; //indicate the direction each elevator is going, true for up, false for down.
