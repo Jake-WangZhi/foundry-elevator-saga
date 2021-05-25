@@ -1,7 +1,6 @@
 {       
-    //Challenge #17. Passing rate: 10%. Failure cases mostly need to transport ten more person to pass
-	
-    //same as the solution of challenge #4
+    
+    //same as the solution of challenge #4 but this is the final version
     init: function(elevators, floors) {
         let ups = []; //indicate the direction each elevator is going, true for up, false for down.
 
