@@ -36,10 +36,12 @@
                     if(nextRoundDown.length != 0){
                         elevator.goToFloor(nextRoundDown[0]);
                     }else{
+					  if(elevator.currentFloor() != 0){
                         ups[index] = !ups[index];
                         elevator.goingUpIndicator(ups[index]);
                         elevator.goingDownIndicator(!ups[index]);
                         elevator.goToFloor(0);
+					  }
                     }   
                 }
             });
@@ -192,6 +194,7 @@
         //change the direction of the elevator to down if it meets all the conditions
         //or goes to the floor where a passenger needs to be pick up beyond its current floor
         function turnDown(elevator, floorNum, nextRoundDown, index){
+		  if(floorNum != 0){
             //if no one requests beyond its current floor on the opposite direction or it has reached to the top floor
             if(nextRoundDown.length == 0 || nextRoundDown[0] <= floorNum || floorNum == topFloor){
                 ups[index] = !ups[index];
@@ -200,7 +203,8 @@
                 merge(elevator,ups[index],nextRoundDown,index);
             }else{
                 elevator.goToFloor(nextRoundDown[0]);
-            }   
+            } 
+		  }			
         }
 
         //change the direction of the elevator to up if it meets one of the conditions
